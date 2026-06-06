@@ -1,6 +1,7 @@
 services:
   maquina00:
     build: ./
+    tty: true
     volumes:
       - /home/maquina00/bin:/bin
       - /home/maquina00/dev:/dev
@@ -25,6 +26,7 @@ services:
       - '10070:7' # UDP
   maquina01:
     build: ./
+    tty: true
     volumes:
       - /home/maquina01/bin:/bin
       - /home/maquina01/dev:/dev
