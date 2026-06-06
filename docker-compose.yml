@@ -3,17 +3,8 @@ services:
     build: ./
     tty: true
     volumes:
-      - /home/maquina00/bin:/bin
-      - /home/maquina00/home:/home
-      - /home/maquina00/lib64:/lib64
-      - /home/maquina00/opt:/opt
-      - /home/maquina00/srv:/srv
-      - /home/maquina00/var:/var
-      - /home/maquina00/etc:/etc
-      - /home/maquina00/lib:/lib
-      - /home/maquina00/root:/root
-      - /home/maquina00/sbin:/sbin
-      - /home/maquina00/usr:/usr
+      - /home/maquina00/home/root:/home/root
+      - /home/maquina00/home/user:/home/user
     networks:
       - red00
     ports:
@@ -27,17 +18,8 @@ services:
     build: ./
     tty: true
     volumes:
-      - /home/maquina01/bin:/bin
-      - /home/maquina01/home:/home
-      - /home/maquina01/lib64:/lib64
-      - /home/maquina01/opt:/opt
-      - /home/maquina01/srv:/srv
-      - /home/maquina01/var:/var
-      - /home/maquina01/etc:/etc
-      - /home/maquina01/lib:/lib
-      - /home/maquina01/root:/root
-      - /home/maquina01/sbin:/sbin
-      - /home/maquina01/usr:/usr
+      - /home/maquina01/home/root:/home/root
+      - /home/maquina01/home/user:/home/user
     networks:
       - red00
     ports:
