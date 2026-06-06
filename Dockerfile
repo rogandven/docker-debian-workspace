@@ -8,5 +8,5 @@ RUN apt update && apt upgrade -y && apt autoremove -y
 RUN apt install systemd ssh openssh-client openssh-server openssh-sftp-server bash -y
 
 USER user
-CMD (/sbin/init 1) && ssh && (/bin/sh $HOME)
-ENTRYPOINT (/sbin/init 1) && ssh && (/bin/sh $HOME)
+CMD ["sh", "-c", "tail -f /dev/null"]
+ENTRYPOINT ["sh", "-c", "tail -f /dev/null"]
