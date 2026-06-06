@@ -4,7 +4,6 @@ services:
     tty: true
     volumes:
       - /home/maquina00/bin:/bin
-      - /home/maquina00/dev:/dev
       - /home/maquina00/home:/home
       - /home/maquina00/lib64:/lib64
       - /home/maquina00/opt:/opt
@@ -29,7 +28,6 @@ services:
     tty: true
     volumes:
       - /home/maquina01/bin:/bin
-      - /home/maquina01/dev:/dev
       - /home/maquina01/home:/home
       - /home/maquina01/lib64:/lib64
       - /home/maquina01/opt:/opt
