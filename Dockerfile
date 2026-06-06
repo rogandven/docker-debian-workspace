@@ -6,8 +6,7 @@ RUN echo 'user:${USER_PASSWORD}' | chpasswd
 
 RUN apt update && apt upgrade -y && apt autoremove -y
 RUN apt install systemd ssh openssh-client openssh-server openssh-sftp-server bash -y
-RUN /sbin/init 0
 
 USER user
-CMD ["/bin/bash", "$HOME"]
-ENTRYPOINT ["/bin/bash", "$HOME"]
+CMD (/sbin/init 1) && ssh && (/bin/bash $HOME)
+ENTRYPOINT (/sbin/init 1) && ssh && (/bin/bash $HOME)
