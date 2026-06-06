@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:trixie-20260518
 USER root
 RUN echo 'root:${ROOT_PASSWORD}' | chpasswd
 RUN useradd -m user
