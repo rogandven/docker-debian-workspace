@@ -1,6 +1,6 @@
 services:
   maquina00:
-    image: jrei/systemd-debian:12
+    build: ./
     volumes:
       - /home/maquina00/bin:/bin
       - /home/maquina00/dev:/dev
@@ -24,7 +24,7 @@ services:
       - '10220:22' # SSH
       - '10070:7' # UDP
   maquina01:
-    image: jrei/systemd-debian:12
+    build: ./
     volumes:
       - /home/maquina01/bin:/bin
       - /home/maquina01/dev:/dev
