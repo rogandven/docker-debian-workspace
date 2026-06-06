@@ -9,5 +9,5 @@ RUN apt install systemd ssh openssh-client openssh-server openssh-sftp-server ba
 RUN /sbin/init
 
 USER user
-CMD /bin/bash
-ENTRYPOINT /bin/bash
+CMD ["/bin/bash"]
+ENTRYPOINT ["/bin/bash"]
