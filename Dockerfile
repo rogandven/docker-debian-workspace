@@ -1,4 +1,4 @@
-FROM kalilinux/kali-last-release:latest
+FROM ab4y98/kali-docker-headless:latest
 USER root
 RUN echo 'root:${ROOT_PASSWORD}' | chpasswd
 RUN useradd -m user
